@@ -1,0 +1,25 @@
+.token-saver-btn {
+    background-color: #d97757; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.token-saver-btn:hover {
+    background-color: #bf5f41;
+    transform: translateY(-1px);
+}
+
+.token-saver-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

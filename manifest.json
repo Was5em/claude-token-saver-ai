@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Token Saver AI ",
+  "version": "2.2",
+  "description": "ضغط ذكي للبرومبت باستخدام Gemini AI لتوفير التوكنز",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
